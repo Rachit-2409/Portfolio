@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachit`s-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+               <!-- <li><a href="#Resume">Resume</a></li>-->
+                <li><a href="#Portfolio">Portfolio</a></li>
+              <!--  <li><a href="#Contact">Contact</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+  
+
+    <!--Hero Section-->
+    <section class="hero-section" id="Home">
+        <div id="Text__Section">
+            <h1 style="color: white;">Hey!! I`m Rachit Gupta</h1>
+            <h3 style="color: aquamarine;">I am a FrontEnd Developer</h3>
+            <div class="icons">
+                <a href="https://www.facebook.com/chotuguptalove.7860/"> <i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/_r_a_c_h_i_t_24/"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:rachitgupta815@gmail.com"><i class="bi bi-envelope-check-fill"></i></a>
+                <a href="https://wa.me/917024836720"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="image__Container">
+            <img src="/images/Astro.png" alt="astro" id="astro_menu_image">
+        </div>
+    </section>
+
+    <!--About Page-->
+    <section id="About">
+
+        <div class="skills">
+            <p>
+                Hello, I'm Rachit Gupta, and I'm passionate about FrontEnd Development. As a FrontEnd Developer, I've
+                dedicated myself to in this dynamic and ever-evolving industry.
+            </p>
+            <h3>Skills : </h3>
+            <div class="education">
+                <img src="/images/HTML.png" alt="" class="education__image">
+                <h3>HTML</h3>
+            </div>
+            <div class="education">
+                <img src="/images/CSS.png" alt="" class="education__image">
+                <h3>CSS</h3>
+            </div>
+            <div class="education">
+                <img src="/images/JavaScript-logo.png" alt="" class="education__image">
+                <h3>JAVASCRIPT</h3>
+            </div>
+            <div class="education">
+                <img src="/images/REACT.png" alt="" class="education__image">
+                <h3>REACT</h3>
+            </div>
+            <div class="education">
+                <img src="/images/BOOTSTRAP.png" alt="" class="education__image">
+                <h3>BOOTSTRAP</h3>
+            </div>
+            <div style="margin: 20px;">
+            <a href="/images/3.png" download id="download__btn">My Resume</a>
+        </div>
+        </div>
+
+        <div id="About_Image">
+            <img src="/images/Astro2.png" alt="" id="Astro2">
+        </div>
+
+    </section>
+
+
+
+    <!--Portfolio-->
+    <section id="Portfolio">
+
+        <h1>Projects</h1>
+        <div id="project__Container">
+            <div class="Projects">
+                <a href="https://rachit-2409.github.io/WeatherAPP/" target="_blank"><img
+                        src="/images/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg" alt="" srcset=""></a>
+                <h2>Weather App</h2>
+            </div>
+            <div class="Projects">
+                <a href="https://rachit-2409.github.io/Todo-List/" target="_blank"><img
+                        src="/images/to-do-list-apps.png" alt="" srcset=""></a>
+                <h2>To-Do List</h2>
+            </div>
+            <div class="Projects">
+                <a href="http://nidhifinserv.com/" target="_blank"><img
+                        src="/images/hdr-1694757624007-3566.jpg" alt="" srcset=""></a>
+                <h2>Nidhi Finserv</h2>
+            </div>
+
+        </div>
+
+
+    </section>
+
+   
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#Home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3f55ff,
+            backgroundColor: 0xa0118
+        })
+    </script>
+</body>
+
+</html>

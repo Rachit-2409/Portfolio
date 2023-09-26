@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --primary-color: #160342;
+}
+
+#menu-bar {
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    padding: 30px;
+    position: fixed;
+}
+
+#astro_menu_image {
+    height: 100%;
+    width: 100%;
+}
+
+.image__Container {
+    background-color: #09001d;
+    padding: 40px;
+    border: 2px white solid;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+.image__Container:hover #astro_menu_image{
+    transform: rotate(20deg);
+}
+.image__Container:hover {
+   background-color: transparent;
+}
+
+.icons {
+    margin-top: 10px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.Title {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+.bi {
+    color: #ffffff;
+}
+
+header{
+    padding: 20px 100px;
+    background-color: #020336;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+   
+}
+
+nav {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    line-height: 20px;
+}
+
+nav ul li a {
+    padding: 20px;
+    color: aqua;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #04053f;
+}
+
+#Text__Section {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 30%;
+    font-size: 40px;
+}
+
+.hero-section {
+    background-color: #042f36;
+    height: 100vh;
+    width: 100%;
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*About Container*/
+#About{
+    padding: 20px 100px;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #160342;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 150px;
+}
+.skills{
+    width: 45%;
+}
+.skills p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.About__Boxes{
+  
+    height: 70vh;
+    width: 50%;
+    margin-top: 40px;
+}
+.Education__Skills{
+    display: flex;
+    margin-left: 450px;
+
+}
+.education{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.education:hover .education img{
+    transform: rotate(360deg);
+}
+#htmlcss{
+    height: 400px;
+}
+#download__btn{
+    padding: 10px 60px;
+}
+.education__image{
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px 40px;
+}
+
+#Astro2{
+    height: 700px;
+    animation-name: movement;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+ @keyframes movement {
+    0% {transform: translateY(30px);}
+    25% {transform: translateY(000px);}
+    75% {transform: translateY(30px);}
+    100% {transform: translateY(00px);}
+ }
+
+ /*Resume*/
+
+ #Resume{
+    height: 100vh;
+    width: 100%;
+    background-color: #042f36;
+ }
+ .Resume__Image{
+    height: 100Vh;
+    display: flex;
+    align-items: center;
+ }
+ .Resume__Text{
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    color: white;
+ }
+ .Resume__Image img{
+    height: 700px;
+    margin-left: -350px;
+    animation-name: reactRotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+ }
+
+ @keyframes reactRotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+ }
+ /*Portfolio*/
+
+#Portfolio{
+    height: 100vh;
+    width: 100%;
+    background-color: #020e20;
+    color: white;
+    padding:  100px;
+    text-align: center;
+}
+#Portfolio h1{
+    font-size: 40px;
+}
+.Projects{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.Projects h2{
+    color: #04053f;
+}
+.Projects img{
+    height: 75%;
+    width: 100%;
+}
+#project__Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Planets__Resume{
+    height: 700px;
+}
+
+#download__btn{
+    padding: 10px;
+    background-color: #010220;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 2px solid white;
+    text-decoration: none;
+}
