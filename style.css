@@ -1,0 +1,308 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+}
+
+/*Color Variable*/
+:root {
+  /*  --first-black: #f6f6f6;
+    --secound-black: #ececec;
+    --third-black: #e1e1e1;
+    --color-red: #f80000;*/
+    --first-black: #2e2e2e;
+    --secound-black: #303030;
+    --third-black: #353535;
+    --color-red: #f80000;
+}
+
+/*Hero-Section*/
+#h-container {
+    background-color: var(--first-black);
+    width: 100%;
+    color: white;
+}
+
+.h-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.normal_btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(143, 19, 160);
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.normal_btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+#h-line {
+    display: inline-block;
+    width: 150px;
+    height: 5px;
+    background-color: #800b0b;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+}
+
+.social_icon i {
+    font-size: 20px;
+    color: black;
+}
+
+.h-right img {
+    width: 100%;
+    animation: Bounce 6s linear infinite;
+}
+
+.h-left,
+.h-right {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+}
+.a-container{
+    background-color: var(--third-black);
+    color: white;
+}
+/*Skills*/
+.a-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 70vh ;
+
+}
+
+.icon-skils {
+    height: 100px;
+    width: 100px;
+}
+
+.a-skills {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.a-left {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.icon-skils_container{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secound-black);
+    border-radius: 20px;
+    transition: all linear 0.6s;
+}
+.icon-skils_container:hover{
+    background-image: linear-gradient(to bottom, #ffffffbd 0%, #bdf0ff 100%);
+}
+
+.p-container{
+    background-color: var(--secound-black); 
+    text-align: center;
+    padding: 50px;
+    height: auto;
+    min-height: 70vh;
+}
+.cardCon{
+background-color: #ffffff;
+padding: 20px;
+border-radius: 20px;
+width: 40%;
+height: auto;
+}
+.p-card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cardCon img{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.cardCon h3{
+    margin-bottom: 20px;
+}
+.p-head h2{
+    color: white;
+}
+
+/*Contact*/
+
+.c-container{
+
+   
+    padding: 30px;
+    background-color: var(--first-black);
+    height: fit-content;
+    min-height: 70vh;
+}
+.c-wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.c-left{
+    width: 50%;
+}
+.c-left form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.c-left h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.c-left form {
+    margin-top: 30px;
+}
+.c-left form input  {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.c-left button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.c-left form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.c-right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.c-right img{
+    width:  450px;
+}
+.c-right, .c-left{
+    padding: 20px;
+}
+
+ 
+
+@media screen and (max-width: 767px) {
+    .h-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .h-left{
+        width: 100%;
+    }
+    .h-right{
+        width: 100%;
+    }
+.cardCon{
+    width: 100%;
+   
+}
+.c-left{
+    width: 100%;
+
+}
+.c-right{
+    display: none;
+  
+}
+.c-container{
+    padding: 20px;
+    height: fit-content;
+}
+}
+
+/*Animation*/
+@keyframes Bounce {
+
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
