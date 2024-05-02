@@ -24,7 +24,7 @@ p {
 :root {
   /*  --first-black: #f6f6f6;
     --secound-black: #ececec;
-    --third-black: #e1e1e1;
+    --third-black: #e1e1e1;p-card_container
     --color-red: #f80000;*/
     --first-black: #2e2e2e;
     --secound-black: #303030;
@@ -170,7 +170,7 @@ p {
 background-color: #ffffff;
 padding: 20px;
 border-radius: 20px;
-width: 35%;
+width: 20%;
 max-height: auto;
 height: 400px;
 object-fit: cover;
@@ -183,6 +183,7 @@ object-fit: cover;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 40px;
+
 }
 .cardCon img{
     width: 100%;
@@ -262,7 +263,12 @@ object-fit: cover;
 .c-right, .c-left{
     padding: 20px;
 }
-
+.react{
+    margin-top: 30px;
+    background: #353535;
+    padding: 10px;
+    color: white;
+}
  
 
 @media screen and (max-width: 767px) {
@@ -296,6 +302,7 @@ object-fit: cover;
     height: fit-content;
 }
 }
+
 
 /*Animation*/
 @keyframes Bounce {
